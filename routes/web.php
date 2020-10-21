@@ -24,4 +24,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Register route for getting prize.
 Route::get("/get_prize", PrizeController::class)
     ->name("prize.index")
-    ->middleware("auth");
+    ->middleware("auth")
+    ->middleware("user.tries")
+    ->middleware("money.check")
+    ->middleware("prize.check");
