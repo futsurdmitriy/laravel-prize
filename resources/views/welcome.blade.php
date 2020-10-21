@@ -51,7 +51,9 @@
                                 <div class="ml-4 text-lg leading-7 font-semibold text-center"
                                      style="width: 100%;
                                       margin: 0">
-                                    <a href="#" class="underline text-gray-900 dark:text-white">
+
+                                    <a href="{{ route('prize.index') }}"
+                                       class="underline text-gray-900 dark:text-white">
                                         Get the prize
                                     </a>
                                 </div>
